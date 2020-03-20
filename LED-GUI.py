@@ -1,11 +1,13 @@
+#Author Greyson Latinwo
+#to work properly on python 3
+#pip install easydev pyserial colormap
+
 #Imports
 import serial
 import os
 import gc
 from tkinter import *
 from colormap import rgb2hex
-#to work properly on python 3
-#pip install easydev pyserial colormap
 #Varibles
 COMPort = 'COM1'
 window = Tk()
@@ -15,7 +17,6 @@ green = IntVar()
 canvas = Canvas(height=50, width=50)
 color = rgb2hex(red.get(), green.get(), blue.get())
 #ser = serial.Serial(COMPort, 9600, timeout=0)
-
 
 #update the color displayed in the box
 def update():
